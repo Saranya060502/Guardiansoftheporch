@@ -7,7 +7,7 @@ image = cv2.imread(ImageName)
 
 CLIENT = InferenceHTTPClient(
     api_url="https://detect.roboflow.com",
-    api_key="b7BmmitawLgeQwTGzCmB"
+    api_key="<API-KEY>"
 )
 
 result = CLIENT.infer(ImageName, model_id="doorbell-camera-alert/3")
